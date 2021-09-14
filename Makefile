@@ -32,7 +32,7 @@ pre_compiled: lu_ops.h file_ops.h
 .PHONY: assessment clean
 
 assessment:
-	mpirun -n 4 ./run_tscalu -r 4096 -c 128 -t 0
+	mpirun -n 4 ./run_tscalu -r 2048 -c 128 -t 0
 
 clean:
 	$(RM) *.o *.gch $(EXECS) matrices_4096/*.txt matrices_4096_zip_and_tar/*.zip results/outfile*.txt
