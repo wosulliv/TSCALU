@@ -111,7 +111,7 @@ void print_outputs(const int matrix_build_type, const char * matrix_type, const 
 		fprintf(fp, "%d\n", size);
 		fprintf(fp, "%f\n", runtime);
 		fprintf(fp, "%f\n", growth_factor);
-		fprintf(fp, "%f\n", backwards_stability);
+		//fprintf(fp, "%f\n", backwards_stability);
 	}
 	fclose(fp);
 }

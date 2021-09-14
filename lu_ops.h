@@ -34,8 +34,11 @@ void pivot_contestants(double * const A, const int m_dim, const int n_dim, int *
 double * collect_winners(double * const A, const int m_dim, const int n_dim);
 void combine_winners(double * const A, double * const W, double * const W_buff, const int m_dim, const int n_dim);
 
-void perform_pivoting(double * const mat, int * const global_index, int * const global_k, int * const global_i, int * const local_k, int * const local_i, const int m_dim, const int n_dim, const int log2size, const int size);
+double * perform_pivoting(double * const mat, int * const global_index, int * const global_k, int * const global_i, int * const local_k, int * const local_i, const int m_dim, const int n_dim, const int log2size, const int size);
 void swap_indices(int * const global_index, int * const global_index_tmp, int k, int i);
+
+void perform_pivoting2(int * const global_index, int * const global_k, int * const global_i, int * const local_k, int * const local_i, const int m_dim, const int n_dim, const int log2size, const int size);
+void permute_matrix(double * const mat, int * const local_index, double * const block_row_memory, const int m_dim, const int n_dim);
 
 /* Function for performing LU factorisation on the pivoted TS matrix A: */
 void gaussian_elimination(double * const A, double * const L, double * const U, const int m_dim, const int n_dim);
