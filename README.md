@@ -33,3 +33,6 @@ used to generate and plot the special matrices, and the Python
 scripts for converting the Matlab matrix .csv files into 
 C-readable arrays, as well as the Python script for performance
 analysis.
+
+
+Limitation notes: The number of rows must be a power of two!
